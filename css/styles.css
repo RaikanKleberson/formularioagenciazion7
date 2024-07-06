@@ -5,10 +5,19 @@
 
 body {
   padding: 1rem;
+background-image: url(/img/Backgroundform.jpg);
+background-attachment: fixed;
+background-size: cover;
 }
 
 h1 {
+  font-size: 40px;
   text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.check1 {
+display: flex;
 }
 
 form {
