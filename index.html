@@ -8,93 +8,64 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
+    <form action="mailto:nome@gmail.com.br" method="POST" enctype="text/plain">
+    
     <div>
-      <h1 class="h1" id="h1">Formulário para Criação de Logotipo</h1>
-      <br>
+      <h1 class="h1" id="h1">Formulário para Criação de Logotipo</h1><br>
     </div>
 
-    <form>
+    <form class="form">
       <fieldset>
-      <div class="dados" id="dadospessoais">
+      <div>
         <label>Insira seu Nome completo:</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" required>
       </div>
-
       <div>
         <label for=""><span>Insira seu Telefone:</span></label>
-        <input type="number" name="Telefone" id="telefone" />
+        <input type="number" name="Telefone" id="telefone" required/>
       </div>
-
       <div>
         <label for=""><span>Insira seu E-mail:</span></label>
-        <input type="email" name="email" id="email" />
-      </div>
-    </fieldset>
-
-  <fieldset>
+        <input type="email" name="email" id="email" required/>
+      </div> <hr>
+      
       <div>
         <label for=""><span>Nome da empresa:</span></label>
-        <input type="search" name="nomedaempresa" id="nomeempresa" />
+        <input type="search" name="nomedaempresa" id="nomeempresa" required/>
       </div>
-    </fieldset>
-    
-  <fieldset>
       <div>
       <label for=""><span>Endereço da empresa:</span></label>
-      <input type="search" name="enderecodaempresa" id="enderecodaempresa" />
-      </div>
+      <input type="search" name="enderecodaempresa" id="enderecodaempresa" required/>
+      </div> <hr>
 
       <div>
           <label for=""><span>Cidade:</span></label>
-          <input type="search" name="cidade" id="cidade" />
-      </div>
+          <input type="search" name="cidade" id="cidade" required/>
+      </div> <hr>
 
       <div>
-      <label label for=""><span>Estado (UF):</span></label>
-      <input type="search" name="estado" id="estado" />
+        <label label for=""><span>Estado (UF):</span></label>
+        <input type="search" name="estado" id="estado" required/>
       </div>
     </fieldset>
 
-      <br>
-      
-      <div>
-          <label for=""><span>Número de Funcionários:</span></label>
+<br>
+
+      <label>Você já escolheu o estilo do Logotipo?</label>
+        <div class="divprincipal">
+          <div><input type="checkbox" name="" id="" checked"></div> SIM
+          <div><input type="checkbox" name="" id=""></div> NÃO
         </div>
-        
         <br>
-
-        <div>
-          <label for=""><span>1 - 20</span></label>
-          <input type="checkbox" name="1a20" id="1a20" />
+      <label>Você já nos mandou as referências para criação?</label>
+        <div class="divprincipal">
+      <div><input type="checkbox" name="" id="" checked"></div> SIM
+      <div><input type="checkbox" name="" id=""></div> NÃO
         </div>
 
-        <div>
-          <label for=""><span>20 - 50</span></label>
-          <input type="checkbox" name="20a50" id="20a50" />
-        </div>
+  <br>
 
-        <div>
-          <label for=""><span>50 - 100</span></label>
-          <input type="checkbox" name="50a100" id="20a50" />
-        </div>
-
-        <div>
-          <label for=""><span>Mais de 100 Funcionários</span></label>
-          <input type="checkbox" name="+de100" id="+de100" />
-        </div>
-
-
-      <conteiner class="#" id="check1">
-        <div class="check" id="checkfuncao">
-          <input type="checkbox" name="Diretor" id="Diretor" />
-          <input type="checkbox" name="Gerente" id="gerente" />
-          <input type="checkbox" name="Secretário" id="Secretário" />
-          <input type="checkbox" name="Agência" id="Agência" />
-          <input type="checkbox" name=" Assistente" id="Assistente" />
-        </div>
-      </conteiner>
-
-      <button type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
   
     </form>
   </body>
